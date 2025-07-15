@@ -1,0 +1,28 @@
+{
+	"include": ["src"],
+	"compilerOptions": {
+		"rootDir": "src",
+		"outDir": "lib",
+
+		"tsBuildInfoFile": "tsconfig.tsbuildinfo",
+		"target": "ESNext",
+		"lib": ["ESNext"],
+		"module": "ESNext",
+		"skipLibCheck": true,
+
+		/* Bundler mode */
+		"moduleResolution": "bundler",
+		"verbatimModuleSyntax": true,
+		"moduleDetection": "force",
+		"declaration": true,
+
+		/* Linting */
+		"strict": true,
+		"allowJs": false,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"erasableSyntaxOnly": true,
+		"noFallthroughCasesInSwitch": true,
+		"noUncheckedSideEffectImports": true
+	}
+}

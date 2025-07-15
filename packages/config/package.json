@@ -1,0 +1,15 @@
+{
+	"name": "config",
+	"version": "0.1.0",
+	"private": true,
+	"type": "module",
+	"main": "lib/index.js",
+	"types": "lib/index.d.ts",
+	"scripts": {
+		"dev": "tsc -b",
+		"build": "tsc -b"
+	},
+	"devDependencies": {
+		"typescript": "^5.8.3"
+	}
+}
