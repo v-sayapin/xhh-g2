@@ -1,0 +1,18 @@
+{
+	"extends": "ts-config/server",
+	"include": ["src/server"],
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"src/server/*": ["src/server/*"]
+		},
+
+		"outDir": "dist/server",
+
+		"tsBuildInfoFile": "tsconfig.server.tsbuildinfo"
+	},
+	"tsc-alias": {
+		"resolveFullPaths": true,
+		"verbose": true
+	}
+}
