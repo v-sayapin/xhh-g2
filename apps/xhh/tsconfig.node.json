@@ -1,0 +1,7 @@
+{
+	"extends": "ts-config/base",
+	"include": ["*.config.ts"],
+	"compilerOptions": {
+		"tsBuildInfoFile": "tsconfig.node.tsbuildinfo"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"extends": "ts-config/client",
+	"include": ["src/client", "src/*.tsx"],
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"src/client/*": ["src/client/*"]
+		},
+
+		"types": ["vite/client"],
+
+		"tsBuildInfoFile": "tsconfig.client.tsbuildinfo"
+	}
+}
