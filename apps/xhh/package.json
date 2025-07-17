@@ -1,0 +1,42 @@
+{
+	"name": "xhh",
+	"version": "0.1.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "tsx watch --tsconfig tsconfig.server.json src/server/app/index.ts",
+		"build": "yarn clean && (yarn build:client & yarn build:ssr & yarn build:server)",
+		"build:client": "vite build",
+		"build:ssr": "vite build --ssr src/render.tsx",
+		"build:server": "NODE_ENV=production node esbuild.server.js",
+		"start": "NODE_ENV=production && node dist/server/app/index.js",
+		"clean": "rm -rf dist"
+	},
+	"dependencies": {
+		"@fastify/compress": "^8.1.0",
+		"@fastify/middie": "^9.0.3",
+		"@fastify/static": "^8.2.0",
+		"@solidjs/router": "^0.15.3",
+		"env-config": "workspace:*",
+		"fastify": "^5.4.0",
+		"fastify-plugin": "^5.0.1",
+		"sirv": "^3.0.1",
+		"solid-js": "^1.9.7",
+		"ts-config": "workspace:*"
+	},
+	"devDependencies": {
+		"@types/node": "^24.0.14",
+		"browserslist": "^4.25.1",
+		"browserslist-to-esbuild": "^2.1.1",
+		"esbuild": "^0.25.6",
+		"tsc-alias": "^1.8.16",
+		"tsx": "^4.20.3",
+		"typescript": "^5.8.3",
+		"vite": "^7.0.5",
+		"vite-plugin-solid": "^2.11.7"
+	},
+	"browserslist": [
+		"defaults and fully supports es6-module",
+		"maintained node versions"
+	]
+}
