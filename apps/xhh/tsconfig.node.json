@@ -1,26 +1,7 @@
 {
+	"extends": "ts-config/base",
 	"include": ["*.config.ts"],
 	"compilerOptions": {
-		"tsBuildInfoFile": "tsconfig.node.tsbuildinfo",
-		"target": "ESNext",
-		"lib": ["ESNext"],
-		"module": "ESNext",
-		"skipLibCheck": true,
-
-		/* Bundler mode */
-		"moduleResolution": "bundler",
-		"allowImportingTsExtensions": true,
-		"verbatimModuleSyntax": true,
-		"moduleDetection": "force",
-		"noEmit": true,
-
-		/* Linting */
-		"strict": true,
-		"allowJs": false,
-		"noUnusedLocals": true,
-		"noUnusedParameters": true,
-		"erasableSyntaxOnly": true,
-		"noFallthroughCasesInSwitch": true,
-		"noUncheckedSideEffectImports": true
+		"tsBuildInfoFile": "tsconfig.node.tsbuildinfo"
 	}
 }

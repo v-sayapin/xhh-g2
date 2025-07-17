@@ -1,0 +1,12 @@
+{
+	"name": "ts-config",
+	"version": "0.1.0",
+	"private": true,
+	"type": "module",
+	"exports": {
+		"./base": "./src/base.json",
+		"./client": "./src/client.json",
+		"./lib": "./src/lib.json",
+		"./server": "./src/server.json"
+	}
+}

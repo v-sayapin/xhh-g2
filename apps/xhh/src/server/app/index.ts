@@ -1,6 +1,6 @@
 import { join, resolve } from 'node:path';
 
-import { port } from 'config';
+import { port } from 'env-config';
 import Fastify from 'fastify';
 
 import { registerFileBasedRoutes } from 'src/server/app/fileBasedRoutes';

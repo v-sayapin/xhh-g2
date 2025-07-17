@@ -1,33 +1,15 @@
 {
+	"extends": "ts-config/server",
 	"include": ["src/server"],
 	"compilerOptions": {
-		"outDir": "dist/server",
-
 		"baseUrl": ".",
 		"paths": {
 			"src/server/*": ["src/server/*"]
 		},
 
-		"tsBuildInfoFile": "tsconfig.server.tsbuildinfo",
-		"target": "ESNext",
-		"useDefineForClassFields": true,
-		"module": "ESNext",
-		"lib": ["ESNext"],
-		"skipLibCheck": true,
+		"outDir": "dist/server",
 
-		/* Bundler mode */
-		"moduleResolution": "bundler",
-		"verbatimModuleSyntax": true,
-		"moduleDetection": "force",
-
-		/* Linting */
-		"strict": true,
-		"allowJs": false,
-		"noUnusedLocals": true,
-		"noUnusedParameters": true,
-		"erasableSyntaxOnly": true,
-		"noFallthroughCasesInSwitch": true,
-		"noUncheckedSideEffectImports": true
+		"tsBuildInfoFile": "tsconfig.server.tsbuildinfo"
 	},
 	"tsc-alias": {
 		"resolveFullPaths": true,

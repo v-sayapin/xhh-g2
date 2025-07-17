@@ -1,0 +1,23 @@
+{
+	"name": "stylelint-config",
+	"version": "0.1.0",
+	"private": true,
+	"type": "module",
+	"main": "lib/index.js",
+	"types": "lib/index.d.ts",
+	"scripts": {
+		"dev": "tsc -b",
+		"build": "tsc -b"
+	},
+	"peerDependencies": {
+		"stylelint": "^16.21.1",
+		"stylelint-config-recess-order": "^7.1.0",
+		"stylelint-config-standard": "^38.0.0",
+		"stylelint-order": "^7.0.0"
+	},
+	"devDependencies": {
+		"stylelint": "^16.21.1",
+		"ts-config": "workspace:*",
+		"typescript": "^5.8.3"
+	}
+}

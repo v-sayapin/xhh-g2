@@ -1,5 +1,5 @@
 {
-	"name": "config",
+	"name": "env-config",
 	"version": "0.1.0",
 	"private": true,
 	"type": "module",
@@ -10,6 +10,7 @@
 		"build": "tsc -b"
 	},
 	"devDependencies": {
+		"ts-config": "workspace:*",
 		"typescript": "^5.8.3"
 	}
 }
