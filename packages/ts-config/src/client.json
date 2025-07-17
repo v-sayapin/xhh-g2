@@ -1,0 +1,12 @@
+{
+	"extends": "./base.json",
+	"compilerOptions": {
+		"target": "ES2022",
+		"useDefineForClassFields": true,
+		"module": "ESNext",
+		"lib": ["ES2022", "DOM", "DOM.Iterable"],
+
+		"jsx": "preserve",
+		"jsxImportSource": "solid-js"
+	}
+}
